@@ -37,7 +37,6 @@ def main():
     model = SentenceTransformer('jhgan/ko-sroberta-multitask')
 
     
-    # 문장 유사도(STS) 파인튜닝에 가장 적합한 코사인 유사도 손실 함수 채택
     train_loss = losses.CosineSimilarityLoss(model=model)
 
     
